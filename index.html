@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>// portfolio — joão pedro | web dev & python</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- CRT scanline overlay -->
+  <div class="scanlines"></div>
+
+  <!-- Floating particles canvas -->
+  <canvas id="particles"></canvas>
+
+
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-bracket">{</span>
+      <span class="logo-text">dev</span>
+      <span class="logo-bracket">}</span>
+      <span class="logo-dot"></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#skills" data-nav>Stack</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <p class="hero-greeting terminal-text">
+          <span class="terminal-prompt">&gt; whoami</span>
+          <span class="typed-cursor"></span>
+        </p>
+        <h1 class="hero-name glitch" data-glitch-text="joão pedro">
+          joão pedro
+        </h1>
+        <h2 class="hero-subtitle">web developer &amp; python enthusiast</h2>
+        <p class="hero-location">&lt; uberlândia - mg, br /&gt;</p>
+        <div class="hero-tagline-container">
+          <span class="tag-line"></span>
+        </div>
+        <p class="hero-bio">
+          CS student at <span class="highlight-unitri">Unitri</span> building things that run in browsers.
+          i turn coffee into full-stack web apps, data visualizations tools, and creative coding experiments.
+          Currently looking for internship or junior roles.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-neon">view projects</a>
+          <a href="#contact" class="btn btn-outline">get in touch</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <!-- Avatar -->
+        <img src="assets/pfp.jpg" alt="joao pedro avatar" class="hero-avatar-right">
+
+        <!-- ASCII art decoration -->
+        <pre class="ascii-art">
+    ╔══════════════════════╗
+    ║  ░░▒▒██  web dev    ░█║
+    ║  ▓▓ ██  portfolio ██▓║
+    ║  ██  ██████████  ██▒║
+    ║  ▓▓  █  CODE █  ▓▓▒║
+    ║  ██  ████▓▓░░  ██░║
+    ║  ▒▒▓██░░▓██▒▒▓▓▒░░║
+    ╚══════════════════════╝
+        </pre>
+        <div class="hero-glow-ring"></div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="section-header">
+      <span class="section-number">// 01</span>
+      <h2 class="section-title neon-text cyan">about_me.exe</h2>
+      <div class="title-underline">
+        <div class="underline-line"></div>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="about-grid">
+        <div class="about-card glass-panel glitch-hover">
+          <div class="card-icon terminal-glyph">&gt;/</div>
+          <h3>education</h3>
+          <p class="card-detail">computer science @ Unitri</p>
+          <p class="card-desc">currently pursuing my degree while building real-world web applications. Focused on full-stack development, algorithms, and system design.</p>
+        </div>
+        <div class="about-card glass-panel glitch-hover">
+          <div class="card-icon code-glyph">{}</div>
+          <h3>experience</h3>
+          <p class="card-detail">web developer</p>
+          <p class="card-desc">built full-stack applications with JavaScript, MySQL, Python, and HTML/CSS. Comfortable shipping end-to-end features from concept to deployment.</p>
+        </div>
+        <div class="about-card glass-panel glitch-hover">
+          <div class="card-icon find-glyph">@</div>
+          <h3>looking for</h3>
+          <p class="card-detail">internship / junior role</p>
+          <p class="card-desc">open to full-time and internship opportunities where I can grow as a developer and contribute to meaningful projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <div class="section-header">
+      <span class="section-number">// 02</span>
+      <h2 class="section-title neon-text magenta">tech_stack.js</h2>
+      <div class="title-underline">
+        <div class="underline-line"></div>
+      </div>
+    </div>
+    <div class="skills-content">
+      <div class="skills-grid">
+        <!-- Frontend -->
+        <div class="skill-category glass-panel glitch-hover">
+          <h3 class="category-title neon-text cyan">
+            <span class="category-bracket">{</span> frontend
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item" data-level="90">
+              <span class="skill-name">HTML5 / CSS3</span>
+              <div class="skill-bar"><div class="skill-fill fill-cyan"></div></div>
+            </div>
+            <div class="skill-item" data-level="85">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill fill-cyan"></div></div>
+            </div>
+            <div class="skill-item" data-level="70">
+              <span class="skill-name">Responsive Design</span>
+              <div class="skill-bar"><div class="skill-fill fill-cyan"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category glass-panel glitch-hover">
+          <h3 class="category-title neon-text magenta">
+            <span class="category-bracket">{</span> backend
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item" data-level="80">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill fill-magenta"></div></div>
+            </div>
+            <div class="skill-item" data-level="75">
+              <span class="skill-name">MySQL / SQL</span>
+              <div class="skill-bar"><div class="skill-fill fill-magenta"></div></div>
+            </div>
+            <div class="skill-item" data-level="65">
+              <span class="skill-name">REST APIs</span>
+              <div class="skill-bar"><div class="skill-fill fill-magenta"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-category glass-panel glitch-hover">
+          <h3 class="category-title neon-text purple">
+            <span class="category-bracket">{</span> tools
+          </h3>
+          <div class="skill-items">
+            <div class="skill-item" data-level="85">
+              <span class="skill-name">Git / GitHub</span>
+              <div class="skill-bar"><div class="skill-fill fill-purple"></div></div>
+            </div>
+            <div class="skill-item" data-level="70">
+              <span class="skill-name">VS Code</span>
+              <div class="skill-bar"><div class="skill-fill fill-purple"></div></div>
+            </div>
+            <div class="skill-item" data-level="60">
+              <span class="skill-name">Linux / CLI</span>
+              <div class="skill-bar"><div class="skill-fill fill-purple"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Code snippet decoration -->
+      <div class="code-snippet glass-panel">
+        <div class="snippet-header">
+          <span class="snippet-dot red"></span>
+          <span class="snippet-dot yellow"></span>
+          <span class="snippet-dot green"></span>
+          <span class="snippet-filename">developer.json</span>
+        </div>
+        <pre class="snippet-code"><code>{
+  "name": "joão pedro",
+  "username": "LagBack",
+  "major": "Computer Science",
+  "school": "Unitri",
+  "location": "Uberlândia - MG, BR",
+  "skills": ["javascript", "python", "node.js", "mysql", "html/css"],
+  "looking_for": "internship or work",
+  "available": true,
+  "willing_to": ["learn_new_tech", "take_on_challenges", "build_cool_stuff"]
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section">
+    <div class="section-header">
+      <span class="section-number">// 03</span>
+      <h2 class="section-title neon-text cyan">projects.json</h2>
+      <div class="title-underline">
+        <div class="underline-line"></div>
+      </div>
+    </div>
+    <div class="projects-content">
+      <div class="projects-grid">
+        <!-- corleonemarket -->
+        <div class="project-card glass-panel glitch-hover" data-project>
+          <a href="https://github.com/LagBack/corleonemarket" target="_blank" class="card-overlay"></a>
+          <div class="project-status online"></div>
+          <img src="assets/corleonemarket.png" alt="corleonemarket screenshot" class="project-screenshot">
+          <div class="project-info">
+            <h3 class="project-title">corleonemarket</h3>
+            <p class="project-desc">Real-time mock stock market simulator — Node.js, Express, and MySQL. Trade stocks, view net worth rankings, manage company ownerships, and access admin/mod/dev dashboards with a mobile-first UI.</p>
+            <div class="project-techs">
+              <span class="tech-tag js">Node.js</span>
+              <span class="tech-tag db">MySQL</span>
+              <span class="tech-tag html">HTML</span>
+              <span class="tech-tag css">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/LagBack/corleonemarket" class="project-link code-link" target="_blank">source →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- lastfm-stats-tracker -->
+        <div class="project-card glass-panel glitch-hover" data-project>
+          <a href="https://github.com/LagBack/lastfm-stats-tracker" target="_blank" class="card-overlay"></a>
+          <div class="project-status online"></div>
+          <img src="assets/lastfm.jpg" alt="lastfm-stats-tracker screenshot" class="project-screenshot">
+          <div class="project-info">
+            <h3 class="project-title">lastfm-stats-tracker</h3>
+            <p class="project-desc">Tool for visualizing music listening habits and statistics. Analyzes last.fm data to reveal your top artists, tracks, and listening trends over time.</p>
+            <div class="project-techs">
+              <span class="tech-tag js">JavaScript</span>
+              <span class="tech-tag html">HTML</span>
+              <span class="tech-tag css">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/LagBack/lastfm-stats-tracker" class="project-link code-link" target="_blank">source →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- face-reactions -->
+        <div class="project-card glass-panel glitch-hover" data-project>
+          <a href="https://github.com/LagBack/face-reactions" target="_blank" class="card-overlay"></a>
+          <div class="project-status online"></div>
+          <img src="assets/face-reactions.png" alt="face-reactions screenshot" class="project-screenshot">
+          <div class="project-info">
+            <h3 class="project-title">face-reactions</h3>
+            <p class="project-desc">Real-time face reaction detection using OpenCV and MediaPipe. Tracks facial expressions and maps them to emotion categories for interactive web experiences.</p>
+            <div class="project-techs">
+              <span class="tech-tag py">Python</span>
+              <span class="tech-tag canvas">OpenCV</span>
+              <span class="tech-tag js">MediaPipe</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/LagBack/face-reactions" class="project-link code-link" target="_blank">source →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- spotify-music-visualizer -->
+        <div class="project-card glass-panel glitch-hover" data-project>
+          <a href="https://github.com/LagBack/spotify-music-visualizer" target="_blank" class="card-overlay"></a>
+          <div class="project-status online"></div>
+          <img src="assets/spotifymusic.png" alt="spotify music visualizer screenshot" class="project-screenshot">
+          <div class="project-info">
+            <h3 class="project-title">spotify-music-visualizer</h3>
+            <p class="project-desc">Interactive music visualization tool built with JavaScript. Transforms audio data into dynamic visual effects and reactive graphics for an immersive listening experience.</p>
+            <div class="project-techs">
+              <span class="tech-tag js">JavaScript</span>
+              <span class="tech-tag canvas">Canvas</span>
+              <span class="tech-tag css">CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/LagBack/spotify-music-visualizer" class="project-link code-link" target="_blank">source →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="section-header">
+      <span class="section-number">// 04</span>
+      <h2 class="section-title neon-text magenta">connect_with_me.py</h2>
+      <div class="title-underline">
+        <div class="underline-line"></div>
+      </div>
+    </div>
+    <div class="contact-content">
+      <p class="contact-intro">
+        I'm actively looking for internship or junior developer positions.<br>
+        Let's talk about how I can contribute to your team.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-card glass-panel glitch-hover contact-copy" data-copy="joaopedrodefreitasneves6@gmail.com">
+          <span class="contact-icon">@</span>
+          <h3>email</h3>
+          <p>joaopedrodefreitasneves6@gmail.com</p>
+          <span class="copy-feedback"></span>
+        </div>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-de-freitas-neves-1b828637b/" class="contact-card glass-panel glitch-hover" target="_blank">
+          <span class="contact-icon">in</span>
+          <h3>linkedin</h3>
+          <p>/in/joão-pedro</p>
+        </a>
+        <a href="https://github.com/LagBack" class="contact-card glass-panel glitch-hover" target="_blank">
+          <span class="contact-icon">&lt;/&gt;</span>
+          <h3>github</h3>
+          <p>@LagBack</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">
+        <span class="footer-prompt">&gt;</span>
+        designed &amp; built by joão pedro — powered by HTML, CSS & JS
+      </p>
+      <p class="footer-year" id="year"></p>
+    </div>
+  </footer>
+
+  <!-- Ambient background glow -->
+  <div class="ambient-glow glow-cyan"></div>
+  <div class="ambient-glow glow-magenta"></div>
+  <div class="ambient-glow glow-purple"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
